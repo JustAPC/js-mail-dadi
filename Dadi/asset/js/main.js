@@ -1,10 +1,10 @@
-let dado1 = Math.floor(Math.random() * 6) + 1;
-let dado2 = Math.floor(Math.random() * 6) + 1;
-
 let bottoneDadi = document.getElementById("bottone-dadi");
 
 bottoneDadi.addEventListener("click",
 function(){
+    let dado1 = Math.floor(Math.random() * 6) + 1;
+    let dado2 = Math.floor(Math.random() * 6) + 1;
+    
     document.getElementById("giocatore1").innerHTML = "Il tuo numero è " + dado1
 
     document.getElementById("giocatore2").innerHTML = "Il numero del computer è " + dado2
